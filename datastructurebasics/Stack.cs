@@ -76,7 +76,7 @@ namespace datastructurebasics
    
     //========================================================================================================================
 
-    // stack 2) Linked list impelemnt 
+    // stack 2) Linked list impelemnt of ADT Stack
     /*
     class Node <T>
     {

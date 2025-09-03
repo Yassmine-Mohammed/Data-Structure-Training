@@ -8,50 +8,25 @@ namespace datastructurebasics
 {
     public class Program
     {
-        static bool arepair(char open, char close)
-        {
-            if (open == '(' && close == ')') { return true; }
-            else if (open == '{' && close == '}') { return true; }
-            else if (open == '[' && close == ']') { return true; }
-            return false;
-        }
-        static bool arebalanced(string exp)
-        {
-            Stack<char> s = new Stack<char>();
-            for (int i = 0; i < exp.Length; i++)
-            {
-                if (exp[i] == '(' || exp[i] == '{' || exp[i] == '[')
-                {
-                    s.Push(exp[i]);
-                }
-                else if (exp[i] == ')' || exp[i] == '}' || exp[i] == ']')
-                {
-                    if (s.Count == 0||!arepair(s.Peek(), exp[i]))
-                    {
-                        return false;
-                    }
-                    else
-                    {
-                        s.Pop();
-                    }
-                }
-            }
-        
-    
-            return (s.Count == 0 );
-        }
         static void Main(string[] args)
         {
-            Console.Write("enter you experation: ");
-            string exp = Console.ReadLine();
-            if (arebalanced(exp))
-            {
-                Console.WriteLine("The expression is balanced");
-            }
-            else
-            {
-                Console.WriteLine("The expression is not balanced");
-            }
+           Linked_List<int> intList = new Linked_List<int>();
+            intList.InsertFirst(10);
+            intList.InsertLast(20);
+            intList.PrintList();
+            intList.InsertLast(30);
+            intList.InsertFirst(0);
+            intList.PrintList();
+            intList.InsertAtPossision(15, 2);
+            intList.PrintList();
+            //==============================================================
+            Linked_List<string> strList = new Linked_List<string>();
+            strList.InsertFirst("Hello");
+            strList.InsertLast("World");
+            strList.PrintList();
+            strList.InsertAtPossision("C#", 1);
+            strList.PrintList();
+
         }
     }
 }
