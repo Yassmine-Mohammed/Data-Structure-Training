@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO.Pipelines;
 using System.Linq;
@@ -177,9 +177,8 @@ namespace datastructurebasics
             {
                 Console.Write(current.Data + " ");
                 current = current.Next;
-                Console.WriteLine("].");
-
             }
+                Console.WriteLine("].");
         }
         public void Getsize()
         {
