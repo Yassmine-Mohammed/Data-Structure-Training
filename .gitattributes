@@ -125,4 +125,5 @@ HEAD
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
-7d46665 (Implemented stack using array in C#)
+# d46665 (Implemented stack using array in C#)
+
