@@ -1,5 +1,4 @@
-﻿git pullgit pullusing System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Reflection.Metadata.Ecma335;
@@ -10,22 +9,22 @@ namespace datastructurebasics
     {
         static void Main(string[] args)
         {
-           Linked_List<int> intList = new Linked_List<int>();
-            intList.InsertFirst(10);
-            intList.InsertLast(20);
-            intList.PrintList();
-            intList.InsertLast(30);
-            intList.InsertFirst(0);
-            intList.PrintList();
-            intList.InsertAtPossision(15, 2);
-            intList.PrintList();
-            //==============================================================
-            Linked_List<string> strList = new Linked_List<string>();
-            strList.InsertFirst("Hello");
-            strList.InsertLast("World");
-            strList.PrintList();
-            strList.InsertAtPossision("C#", 1);
-            strList.PrintList();
+          Double_Linked_List<int> dll = new Double_Linked_List<int>();
+            dll.InsertFirst2(10);
+            dll.InsertLast2(20);
+            dll.InsertLast2(30);
+            dll.InsertLast2(40);
+            dll.InsertAt(2, 25);
+            dll.PrintList2();
+            Console.WriteLine("The legth of the list: "+dll.Length2());
+            dll.RemoveFirst2();
+            dll.RemoveLast();
+            dll.PrintList2();
+            Console.WriteLine("The legth of the list: " + dll.Length2());
+            dll.RemoveAt(1);
+            dll.PrintList2();
+            Console.WriteLine("The legth of the list: " + dll.Length2());
+            dll.ReversePrint();
 
         }
     }

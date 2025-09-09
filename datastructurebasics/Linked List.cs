@@ -170,5 +170,37 @@ namespace datastructurebasics
             length--;
 
         }
+        public void Revrse()
+        {
+            Node<T> prev = null;
+            Node<T> current = head;
+            Node<T> next = null;
+            // Iterate through the list and reverse the links
+            while (current != null)
+            {
+                next = current.next;
+                current.next = prev;
+                prev = current;
+                current = next;
+            }
+            // Finally, update the head to point to the new first node
+            head = prev;
+        }
+        public void Search(T item)
+        {
+            int pos = 0;
+            while (head != null)
+            {
+                if (head.item.Equals(item))
+                {
+                    Console.WriteLine($"Item {item} found at possion {pos}");
+                    return;
+                }
+                head = head.next;
+                pos++;
+            }
+            Console.WriteLine($"Item {item} not found");
+
+        }
     }
 }
