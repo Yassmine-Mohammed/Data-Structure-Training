@@ -9,23 +9,15 @@ namespace datastructurebasics
     {
         static void Main(string[] args)
         {
-          Double_Linked_List<int> dll = new Double_Linked_List<int>();
-            dll.InsertFirst2(10);
-            dll.InsertLast2(20);
-            dll.InsertLast2(30);
-            dll.InsertLast2(40);
-            dll.InsertAt(2, 25);
-            dll.PrintList2();
-            Console.WriteLine("The legth of the list: "+dll.Length2());
-            dll.RemoveFirst2();
-            dll.RemoveLast();
-            dll.PrintList2();
-            Console.WriteLine("The legth of the list: " + dll.Length2());
-            dll.RemoveAt(1);
-            dll.PrintList2();
-            Console.WriteLine("The legth of the list: " + dll.Length2());
-            dll.ReversePrint();
-
-        }
+          Tree <int> tree = new Tree<int>();
+            tree.Add(50);
+            tree.Add(30);
+            tree.Add(70);
+            tree.Add(20);
+            tree.Add(40);
+            tree.Add(60);
+            tree.Add(80);
+            tree.Display();
+       }
     }
 }

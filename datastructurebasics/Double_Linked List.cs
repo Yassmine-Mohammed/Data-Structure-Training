@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace datastructurebasics
 {
+    /*
     public class Double_Linked_List<T>
     {
         public class Doublenode<T>
@@ -134,7 +135,7 @@ namespace datastructurebasics
                 return;
             }
             tail2 = tail2.prev;
-            tail2.next= null;
+            tail2.next = null;
             length2--;
         }
         public void RemoveAt(int index)
@@ -151,7 +152,7 @@ namespace datastructurebasics
             }
             if (index == length2)
             {
-               RemoveLast();
+                RemoveLast();
                 return;
             }
             Doublenode<T> current = head2;
@@ -164,7 +165,7 @@ namespace datastructurebasics
             length2--;
 
         }
-        public void ReversePrint ()
+        public void ReversePrint()
         {
             Doublenode<T> current = tail2;
             Console.Write("Reversed List: ");
@@ -176,7 +177,7 @@ namespace datastructurebasics
             Console.WriteLine("null");
         }
     }
-    
-    
+
+*/
 
 }

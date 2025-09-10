@@ -109,7 +109,7 @@ namespace datastructurebasics
      }
     */
     //==================================================================================================================================
-    //2) A Linked List impelementation of ADT Queue
+   /* //2) A Linked List impelementation of ADT Queue
     public class Node<T>{
             public T Data;
             public Node <T> Next;
@@ -185,5 +185,5 @@ namespace datastructurebasics
             Console.WriteLine($"The size is: {legnth}");
         }
     }
-
+*/
 }
