@@ -21,8 +21,8 @@ namespace datastructurebasics
             Console.WriteLine();
 
             Algorithms algorithms = new Algorithms();
-            algorithms.SelectionSort(arr);
-            Console.Write("Array after Selection Sort: ");
+            algorithms.BubbleSort(arr);
+            Console.Write("Array after Bubble sort: ");
             Console.Write("[");
             foreach (var item in arr)
             {
