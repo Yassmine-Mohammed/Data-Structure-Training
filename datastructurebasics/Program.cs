@@ -21,8 +21,8 @@ namespace datastructurebasics
             Console.WriteLine();
 
             Algorithms algorithms = new Algorithms();
-            algorithms.InsertionSort(arr);
-            Console.Write("Array after Insertion Sort: ");
+            algorithms.MergeSort(arr, 0, arr.Length - 1);
+            Console.Write("Sorted array by merg store algorithm: ");
             Console.Write("[");
             foreach (var item in arr)
             {
