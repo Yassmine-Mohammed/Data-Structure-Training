@@ -7,17 +7,29 @@ namespace datastructurebasics
 {
     public class Program
     {
+        
         static void Main(string[] args)
         {
-          Tree <int> tree = new Tree<int>();
-            tree.Add(50);
-            tree.Add(30);
-            tree.Add(70);
-            tree.Add(20);
-            tree.Add(40);
-            tree.Add(60);
-            tree.Add(80);
-            tree.Display();
-       }
+          int [] arr = { -50, 40, 20, 10, 0,30 };
+            Console.Write("Original array: ");
+            Console.Write("[");
+            foreach (var item in arr)
+            {
+                Console.Write(item + " ");
+            }
+            Console.Write("]");
+            Console.WriteLine();
+
+            Algorithms algorithms = new Algorithms();
+            algorithms.SelectionSort(arr);
+            Console.Write("Array after Selection Sort: ");
+            Console.Write("[");
+            foreach (var item in arr)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine("]");
+            Console.WriteLine();
+        }
     }
 }
